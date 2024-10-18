@@ -70,12 +70,11 @@ exports.config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: "Android",
-        platformVersion: "12.0",
-       deviceName: "Android Emulator",
-       udid: "5194db69",
+        platformVersion: "15.0",
+       deviceName: "emulator-5554",
        automationName: "UiAutomator2", 
-        appPackage: "com.coloros.calculator", 
-        appActivity:"com.android.calculator2.Calculator"
+        appPackage: "com.toptalla.business", 
+        appActivity:"com.toptalla.business.MainActivity"
     }],
 
     //
@@ -112,11 +111,11 @@ exports.config = {
     // baseUrl: 'http://localhost:8080',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 100000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
-    connectionRetryTimeout: 120000,
+    connectionRetryTimeout: 1200000,
     //
     // Default request retries count
     connectionRetryCount: 3,
