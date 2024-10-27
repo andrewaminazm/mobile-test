@@ -71,7 +71,8 @@ exports.config = {
         // capabilities for local Appium web tests on an Android Emulator
         platformName: "Android",
         platformVersion: "15.0",
-       deviceName: "emulator-5554",
+       //deviceName: "emulator-5554",
+      udid:"5194db69",
        automationName: "UiAutomator2", 
         appPackage: "com.toptalla.business", 
         appActivity:"com.toptalla.business.MainActivity"
